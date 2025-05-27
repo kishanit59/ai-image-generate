@@ -42,3 +42,9 @@ Route::post('/upscale-image', [ImageUpscaleController::class, 'upscale'])->name(
 //texttopngimage route
 Route::get('/text-to-pngimage', [TextToPngImageController::class, 'index'])->name('text.to.pngimage.form');
 Route::post('/text-to-pngimage', [TextToPngImageController::class, 'generate'])->name('text.to.pngimage.generate');
+
+// how-it-works route
+Route::get('/how-it-works', function () { return view('how-it-works'); })->name('how.it.works');
+
+// ai-information route
+Route::get('/ai-information', function () { return view('ai-information'); })->name('ai.information');
