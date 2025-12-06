@@ -15,7 +15,7 @@ class ImageGenerationController extends Controller
     public function generate(Request $request)
     {
         $request->validate([
-            'prompt' => 'required|string|max:255',
+            'prompt' => 'required|string|max:1000',
             'style' => 'required|string',
             'aspect_ratio' => 'nullable|string',
             'seed' => 'nullable|integer',

@@ -15,7 +15,7 @@ class TextToPngImageController extends Controller
     public function generate(Request $request)
     {
         $request->validate([
-            'text' => 'required|string|max:255',
+            'text' => 'required|string|max:1000',
         ]);
 
         $text = $request->input('text');
